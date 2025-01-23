@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/tqM-lrvp)
 # CMPS 2200  Recitation 01
 
-**Name (Team Member 1):**_________________________  
+**Name (Team Member 1):** Madeline Davis 
 **Name (Team Member 2):**_________________________
 
 In this recitation, we will investigate asymptotic complexity. Additionally, we will get familiar with the various technologies we'll use for collaborative coding.
@@ -32,11 +32,11 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 
 `Binary Search`: Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
 
-- [ ] 1. In `main.py`, the implementation of `linear_search` is already complete. Your task is to implement `binary_search`. Implement a recursive solution using the helper function `_binary_search`. 
+- [x] 1. In `main.py`, the implementation of `linear_search` is already complete. Your task is to implement `binary_search`. Implement a recursive solution using the helper function `_binary_search`. 
 
-- [ ] 2. Test that your function is correct by calling from the command-line `pytest test_main.py::test_binary_search`
+- [x] 2. Test that your function is correct by calling from the command-line `pytest test_main.py::test_binary_search`
 
-- [ ] 3. Write at least two additional test cases in `test_binary_search` and confirm they pass.
+- [x] 3. Write at least two additional test cases in `test_binary_search` and confirm they pass.
 
 - [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
 
