@@ -38,13 +38,13 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 
 - [x] 3. Write at least two additional test cases in `test_binary_search` and confirm they pass.
 
-- [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`?
+- [x] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`?
       
 **The worst case for linear search is when the key is not in the list or when it is in the last position. This means that the algorthim check every position. This means that the worst case is O(n). The worst case for binary search is also when the key is not there or the key is in a position that causes it to divide and make the max number of comparisons. The worst case for binary search is O(log_2(n)) **
 
-- [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
+- [x] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
 
-**TODO: your answer goes here**
+**The best case input for the key for linear search would be when it is the first index. The best case for the key for binary search is when it is the index exactly in the middle. Both of these would have a complexity of O(1). **
 
 - [ ] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
 
