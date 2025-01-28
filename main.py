@@ -69,7 +69,10 @@ def time_search(search_fn, mylist, key):
 	  search function on this input.
 	"""
 	### TODO
-
+	start = time.time()
+	search_fn(mylist, key)
+	end = time.time()
+	return (end - start) * 1000
 	###
 
 def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
@@ -88,7 +91,14 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 	  for each method to run on each value of n
 	"""
 	### TODO
-
+	results = []
+	for n in sizes:
+		n = int(n)
+		key = -1
+		linear_search_time = time_search(linear_search, list(range(n)), key)
+		binary_search_time = time_search(binary_search, list(range(n)), key)
+		results.append((n, linear_search_time, binary_search_time))
+	return results
 	###
 
 def print_results(results):
