@@ -40,11 +40,11 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 
 - [x] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`?
       
-The worst case for linear search is when the key is not in the list or when it is in the last position. This means that the algorthim check every position. This means that the worst case is O(n). The worst case for binary search is also when the key is not there or the key is in a position that causes it to divide and make the max number of comparisons. The worst case for binary search is O(log_2(n)) 
+The worst case for linear search is when the key is not in the list or when it is in the last position. This means that the algorthim check every position. This means that the worst case is $O(n)$. The worst case for binary search is also when the key is not there or the key is in a position that causes it to divide and make the max number of comparisons. The worst case for binary search is $O(log_2(n))$
 
 - [x] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
 
-The best case input for the key for linear search would be when it is the first index. The best case for the key for binary search is when it is the index exactly in the middle. Both of these would have a complexity of O(1). 
+The best case input for the key for linear search would be when it is the first index. The best case for the key for binary search is when it is the index exactly in the middle. Both of these would have a complexity of $O(1)$. 
 
 - [x] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
 
@@ -65,9 +65,9 @@ The best case input for the key for linear search would be when it is the first 
 
  
 
-- [ ] 9. The theoretical worst-case running time of linear search is $O(n)$ and binary search is $O(log_2(n))$. Do these theoretical running times match your empirical results? Why or why not?
+- [x] 9. The theoretical worst-case running time of linear search is $O(n)$ and binary search is $O(log_2(n))$. Do these theoretical running times match your empirical results? Why or why not?
 
-**TODO: your answer goes here**
+I would say the empirical results roughly follow the the theoretical running times. If we at linear we see that the time gets about 10 times longer as we increase by a power of 10. This would be $O(n)$ because it increase at the rate that n increases. The binary case is a bit more complicated. We can time increases much slower and $O(log_2(n))$ does increase at a slower rate than $O(n)$. $O(log_2(10^2))$ is about 7 and $O(log_2(10^4))$ is about 14 so it should double it that time. It does roughtly that. I think the reason there are some empirical results that align (i.e. Binary (10, 100, 1000)) is because they all happen so quickly so recording the difference is very challenging for a computer.
 
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times. 
   + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? **TODO: your answer goes here**
