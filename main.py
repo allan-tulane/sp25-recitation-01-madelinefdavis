@@ -107,4 +107,4 @@ def print_results(results):
 							headers=['n', 'linear', 'binary'],
 							floatfmt=".3f",
 							tablefmt="github"))
-
+print_results(compare_search())
